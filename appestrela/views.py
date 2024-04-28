@@ -21,7 +21,7 @@ def cadastro(request):
         
         user = User.objects.create_user(username=username, email=email, password=senha)
         user.save()
-
+        
         return HttpResponse("usuario cadastrado")
 
 def login(request):
@@ -35,12 +35,13 @@ def login(request):
 
         if user:
             login_django(request, user)
-            return HttpResponse("autenticado")
+            return render(request, 'index.html')
         else:
-            return HttpResponse('email ou senha errada')
+            return HttpResponse('Email ou Senha errada, tente novamente')
 
 @login_required(login_url="/auth/login/")
 def index(request):
     if request.user.is_authenticated:
-        return HttpResponse('TA LOGADO NA PAGINA')
-    return HttpResponse ('voce nao esta logado')
+        return render(request, 'index.html')
+    else:
+        return HttpResponse ('Você não está logado, volte e faça do login ou cadastro')
