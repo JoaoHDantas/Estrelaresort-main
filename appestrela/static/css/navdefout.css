@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS Variables */
+:root {
+ --normal-font: 400;
+ --bold-font: 600;
+ --bolder-font: 900;
+ --primary-color: #1798ff;
+ --secondary-color: #222024;
+ --line-height: 1.7rem;
+ --transition: 0.4s ease-in;
+}
+/* Smooth scroll effect */
+html {
+ scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+   }
+   body {
+    font-family: "poppins", sans-serf;
+   }
+   ul li {
+    list-style-type: none;
+   }
+   a {
+    text-decoration: none;
+    color: var(--primary-color);
+   }
+   a:hover {
+    color: var(--secondary-color);
+   }
+   .da {
+    color: var(--primary-color);
+   }
+   .live {
+    color: var(--secondary-color);
+   }
+
+   nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+   }
+   /* Logo e svg */
+   .sol{
+        height: 5rem;
+        width: 5rem;
+        margin-left: 1rem;
+   }
+   .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-weight : 500;
+   }
+   ul {
+    display: flex;
+    justify-content : space-between ;
+    align-items : center;
+   }
+   /* Itens navegação */
+   .nav-item {
+    margin-left : 2rem;
+   }
+   .nav-link {
+    font-weight : var(--bold-font);
+   }
+   .hamburger {
+    display: none;
+   }
+   .bar {
+    background-color: #020202;
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+   }
+/* fim do nav bar */
+
+
+
+
+
+
+
+
+/* ???????? */
+
+   .role {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.8rem;
+   }
+   .subscribe {
+    margin-top : 2rem;
+    height: 10vh;
+   }
+   .subscribe h3 {
+    text-align : center;
+   }
+   form {
+    text-align : center;
+    margin: 0.4rem 2rem;
+   }
+   .email-sub {
+    padding: 0.2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+   }
+   .email-sub:focus {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+   }
+   .submit-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+   }
+   .submit-btn:hover {
+    background-color: var(--secondary-color);
+   }
+   .social {
+    text-align: center;
+    margin: 2rem;
+   }
+   .socicons {
+    font-size: 1.3rem;
+   }
+   footer {
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0px -2px 3px #f1f1f1;
+    text-align: center;
+    padding: 2rem;
+   }
+
+
+   .checkbox {
+    opacity: 0;
+    position: absolute;
+   }
+   .label {
+    width: 50px;
+    height: 29px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 6px;
+    position: relative;
+   }
+   .switcher {
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+   }
+   .moon {
+    color: #ffa502;
+   }
+   .sun {
+    color: #ff4757;
+   }
+   .checkbox:checked + .label .switcher {
+    transform: translateX(24px);
+   }
+   
+   body.dark {
+    background-color: #1e272e;
+   }
+   body.dark .bar {
+    background-color: #fff;
+   }
+   body.dark p {
+    color: #fff;
+   }
+   body.dark h3 {
+    color: #fff;
+   }
+   body.dark nav {
+    background-color: #1e272e;
+    box-shadow: 2px 3px 2px #111010;
+   }
+   body.dark ul {
+    background-color: #1e272e;
+   }
+   body.dark .name {
+    color: var(--primary-color);
+   }
+   body.dark .role {
+    color: var(--secondary-color);
+   }
+   body.dark footer {
+    color: #fff;
+    border-top: 1px solid #111010;
+    box-shadow: 0px -2px 3px #111010;
+   }
+   body.dark .connecting {
+    color: #fff;
+   }
+   body.dark .live {
+    color: #fff;
+   }
+   body.dark h2{
+    color: var(--primary-color);
+   }
+   body.dark .role{
+    color: #fff;
+   }
+   
+/* Para Tablet */
+   @media screen and (max-width: 768px) {
+    .quarto_suite{
+        margin-top: 20rem;
+        
+    }
+    .people{
+        margin-top: 1rem;
+    }
+    .gastronomia img{
+        max-width: 100%;
+        height: auto;
+    }
+    .eventos{
+        margin-top: 20rem;
+    }
+    .eventos img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .hamburger {
+    display: block;
+    cursor: pointer;
+    }
+
+    
+    ul {
+        background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        left: 100%;
+        top: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    @media screen and (max-width: 420px) {
+    .hero {
+        max-width: 330px;
+    }
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+    iframe {
+        max-width: 330px;
+    }
+    }
+    .logo {
+        font-size: 1.5rem;
+        }
+        .hero {
+        flex-direction: column;
+        max-width: 500px;
+        }
+        .intro-text h1 {
+        font-size: 2.3rem;
+        }
+        .btn {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        }
+
+    /* Para celular */
+    }
+    @media screen and (max-width: 425px) {
+        .logo h1{
+            display: none;
+        }
+        body{
+            width: 100%;
+        }
+        .intro-text h1 {
+            font-size: 2rem;
+        }
+
+    }       
+    
