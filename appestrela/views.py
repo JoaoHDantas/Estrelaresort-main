@@ -4,8 +4,22 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
-
+from .models import Post
 # Create your views here.
+
+
+def post_list(request):
+    posts = Post.objects.all()
+    return render(request, 'posts/post_list.html', {'posts': posts})
+
+def carousel(request):
+    posts = Post.objects.all()
+    return render(request, 'posts/carousel.html', {'posts': posts})
+
+def post_detail(request, pk):
+    post = Post.objects.get(pk=pk)
+    return render(request, 'posts/post_detail.html', {'post': post})
+
 def cadastro(request):
     if request.method == "GET":
         return render(request, 'cadastro.html')

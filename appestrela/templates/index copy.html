@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+
+  <!-- Web page CSS -->
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+  <!-- Simple lightbox CSS -->
+  <link rel="stylesheet" href="{% static 'css/simple-lightbox.min.css' %}" />
+
+  <!-- Favicons -->
+  <link rel="sol" sizes="180x180" img="{% static 'img/icon trabalho joao.png' %}" />
+  <link rel="icon" type="image/png" sizes="32x32" img="{% static 'img/icon trabalho joao.png' %}" />
+  <link rel="icon" type="image/png" sizes="16x16" img="{% static 'img/icon trabalho joao.png' %}" />
+
+  <title>Estrela do Mar Resort</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="logo">
+    <h1>
+    <span class="da">Estrela do mar </span><span class="live">Resort</span>
+    </h1>
+    <img  class="sol" src="{% static 'img/icon trabalho joao.png' %}" alt="por do sol">
+    </a>
+
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </div>
+
+   <ul>
+    <li class="nav-item">
+    <a href="#about" class="nav-link" id="nav-link">Sobre</a>
+    </li>
+    <li class="nav-item">
+    <a href="#stars" class="nav-link" id="nav-link">Quartos</a>
+    </li>
+    <li class="nav-item">
+    <a href="#stakeholders " class="nav-link" id="nav-link">Paisagens</a>
+    </li>
+    <li class="nav-item">
+    <a href="#subscribe " class="nav-link" id="nav-link">Check In</a>
+    </li>
+   </ul>
+
+  
+
+  <!-- Dark/light theme switcher -->
+  <div class="theme-switch">
+    <input type="checkbox" class="checkbox" id="checkbox" />
+    <label for="checkbox" class="label">
+    <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+    <ion-icon name="moon-outline" class="moon"></ion-icon>
+    <div class="switcher"></div>
+    </label>
+    </div>
+  </nav>
+
+
+  <!-- About section -->
+  <section class="about" id="about">
+    <h3>Hospede-se agora</h3>
+    <p>
+    Tenha o melhor conforto no maior e melhor resort
+    </p>
+    <h3>Reserve sua suite</h3>
+    <p>
+    Com diretio a café da manhã e varias atividades
+    </p>
+  </section>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="intro-text">
+    <h1>
+    <span class="hear"> Estrela do Mar</span>
+    <span class="connecting"> Resort </span>
+    </h1>
+    <p>
+      O Estrela do Mar Resort é um oásis de luxo e tranquilidade, situado na beira da praia com vistas deslumbrantes do oceano. 
+      Com uma arquitetura inspirada nas ondas do mar e decoração que reflete a beleza natural dos arredores, este resort oferece uma experiência única de hospedagem.
+      Os hóspedes podem desfrutar de suítes espaçosas com varandas privativas, gastronomia gourmet com ingredientes locais frescos, e um spa completo para relaxamento total. 
+      O Estrela do Mar Resort é o destino perfeito para quem busca escapar da rotina e mergulhar em um ambiente de puro requinte e conforto.
+    </p>
+    <a class="btn purple" href="#">saiba mais</a>
+    <a class="btn grey" href="#">assinar</a>
+    </div>
+
+    <div class="i-frame">
+      <iframe width="560" height="279" src="https://www.youtube.com/embed/QzvJ4Uyb5EE" title="Malai Manso Resort | Imagens Aéreas | Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+  </section>
+  
+  <!-- Stakeholders -->
+  <h2 class="quarto_suite"> Quartos e suites</h2>
+  <!-- Quartos Suites -->
+  <section class="people" id="stakeholders">
+    <div class="stakeholders">
+      <div class="persons">
+        <div class="person-1">
+          <img href="#"/>
+          <p href="#" class="name" id="quarto-basico"  >Quarto básico</p>
+          <p class="role">Esta acomodação inclui tv 42”, 4 camas box solteiro ou 1 casal +02 solteiro, ar condicionado, frigobar, chuveiro quente/frio, secador de cabelo, telefone com linha direta, cofre, tv a cabo, wi-fi - SEM VISTA EXTERNA E SEM LUZ NATURAL.</p>
+        </div>
+        <div class="person-2">
+          <img href="#"/>
+          <p href="#" class="name" id="quarto-casal" >Quarto casal</p>
+          <p class="role">Apto com 31m, tv 42", ar condicionado, cofre, tv a cabo, telefone com linha direta, camas queen size, chuveiro quente/frio, internet wi-fi,varanda, frente mar.</p>
+        </div>
+        <div class="person-3">
+          <img href="#"/>
+          <p href="#"class="name" id="suite-presidencial" >Suite presidencial</p>
+          <p class="role">Com Varanda Lateral e Jacuzzi.
+            Características da acomodação: -apto com 73m2, divididos em sala, banheiro com hidro para casal e quarto. 2 Smart tv 42”, 1 cama casal Super King, ar condicionado, frigobar, chuveiro quente/frio, secador de cabelo, telefone com linha direta, cofre, wi-fi, varanda com 2 chaise longe – vista  mata atlantica</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Gastronomia -->
+    <section class="hero">
+    <div class="gastronomia">
+      <div>
+        <h2>Gastronomia</h2>
+        <br>
+        <p>
+          A gastronomia do Estrela do Mar Resort é uma celebração dos sabores do mar e da terra. Nosso menu é uma curadoria de pratos locais e internacionais, preparados com os mais frescos ingredientes da região. Os hóspedes podem esperar uma viagem culinária que inclui frutos do mar capturados no dia, carnes suculentas e uma seleção de pratos vegetarianos e veganos. Cada prato é uma obra de arte, adornado com guarnições criativas e apresentado com um toque de elegância. Com opções que vão desde o café da manhã ao jantar à luz de velas na praia, a experiência gastronômica no Estrela do Mar Resort é tão memorável quanto as ondas que beijam a nossa costa.</p>
+      </div>
+    
+    <img src="{% static 'img/cafe.jpg' %}" alt="cafe da manhã">
+    </div>
+    </section >
+    
+    <!-- Eventos -->
+
+    <section class="hero">
+      <div class="eventos">
+        <img src="{% static 'img/evento-hotel.jpg' %}" alt="Crianças tomando banho de piscina">
+        <div>
+          <h2>Eventos</h2>
+          <br>
+          <p>
+            O Hotel dispõe do espaço ideal para seu evento, temos um auditório e uma sala, além do anexo do Restaurante e Rooftop do Hotel, onde podem ser realizados: casamentos, confraternizações, coquetéis, aniversários, happy hour etc.
+            Com infraestrutura para: reuniões, feiras, workshop, palestras e convenções.</p>
+        </div>
+      
+      
+      </div>
+    </section >
+    
+  <!-- pacotes -->
+  <section class="pacotes" id="pacotes">
+    <h1>Nossos Pacotes</h1>
+    <button id="bnt-saiba-mais">Saiba Mais</button>
+  </section>
+  
+
+  <!-- Email subscription -->
+  <section class="subscribe" id="subscribe">
+    <h3>Faça já sua reserva</h3>
+    <form action="#">
+    <input type="email" name="email" id="email-sub" class="email-sub"
+   required />
+    <input type="submit" value="Submit" id="submit-btn"
+   class="submit-btn" />
+    </form>
+    </section>
+
+  <!-- Social icons -->
+  <section class="social">
+    <h3>Conecte-se conosco</h3>
+    <div class="socicons">
+    <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+    <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+    <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+    </div>
+    </section>
+    <footer>&copy;2023. All Rights Reserverd</footer>
+
+
+
+  <!-- Ion icons CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <!-- Simple lightbox -->
+  <script src="{% static 'js/simple-lightbox.min.js' %}"></script>
+  <script src="{% static 'js/popup.js' %}"></script>
+  <script>
+      // Simple lightbox initializer
+  </script>
+</body>
+
+</html>
