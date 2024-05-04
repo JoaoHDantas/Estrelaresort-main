@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -107,29 +108,20 @@
   <!-- Stakeholders -->
   <h2 class="quarto_suite"> Quartos e suites</h2>
   <!-- Quartos Suites -->
-  <section class="people" id="stakeholders">
-    <div class="stakeholders">
-      <div class="persons">
-        <div class="person-1">
-          <img href="#"/>
-          <p href="#" class="name" id="quarto-basico"  >Quarto básico</p>
-          <p class="role">Esta acomodação inclui tv 42”, 4 camas box solteiro ou 1 casal +02 solteiro, ar condicionado, frigobar, chuveiro quente/frio, secador de cabelo, telefone com linha direta, cofre, tv a cabo, wi-fi - SEM VISTA EXTERNA E SEM LUZ NATURAL.</p>
-        </div>
-        <div class="person-2">
-          <img href="#"/>
-          <p href="#" class="name" id="quarto-casal" >Quarto casal</p>
-          <p class="role">Apto com 31m, tv 42", ar condicionado, cofre, tv a cabo, telefone com linha direta, camas queen size, chuveiro quente/frio, internet wi-fi,varanda, frente mar.</p>
-        </div>
-        <div class="person-3">
-          <img href="#"/>
-          <p href="#"class="name" id="suite-presidencial" >Suite presidencial</p>
-          <p class="role">Com Varanda Lateral e Jacuzzi.
-            Características da acomodação: -apto com 73m2, divididos em sala, banheiro com hidro para casal e quarto. 2 Smart tv 42”, 1 cama casal Super King, ar condicionado, frigobar, chuveiro quente/frio, secador de cabelo, telefone com linha direta, cofre, wi-fi, varanda com 2 chaise longe – vista  mata atlantica</p>
-        </div>
-      </div>
+  <div class="carousel-container">
+    <div class="carousel">
+        {% for post in posts %}
+            <div class="slide">
+                <img href="#" src="{{ post.image.url }}"/>
+                <p href="#" class="name" id="quarto-basico"  >{{ post.title }}</p>
+                <p class="role">{{ post.content }}</p>
+            </div>
+        {% endfor %}
     </div>
-  </section>
-  
+    <button class="prev"><img src="" alt=""></button>
+    <button class="next">Próximo</button>
+</div>
+
   <!-- Gastronomia -->
     <section class="hero">
     <div class="gastronomia">

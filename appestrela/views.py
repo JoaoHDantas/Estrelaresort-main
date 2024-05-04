@@ -12,6 +12,8 @@ def post_list(request):
     posts = Post.objects.all()
     return render(request, 'posts/post_list.html', {'posts': posts})
 
+
+
 def carousel(request):
     posts = Post.objects.all()
     return render(request, 'posts/carousel.html', {'posts': posts})
@@ -56,6 +58,7 @@ def login(request):
 @login_required(login_url="/auth/login/")
 def index(request):
     if request.user.is_authenticated:
-        return render(request, 'index.html')
+        posts = Post.objects.all()
+        return render(request, 'index.html', {'posts': posts})
     else:
         return HttpResponse ('Você não está logado, volte e faça do login ou cadastro')
