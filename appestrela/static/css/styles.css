@@ -105,6 +105,7 @@ html {
    }
    .hero p {
     line-height: var(--line-height);
+    font-size: 1rem;
    }
    .hear {
     color: var(--primary-color);
@@ -146,7 +147,7 @@ html {
    /* Imagem com texto em cima */
    .about {
     position: relative;
-    background: url("../images/Vista.jpg") no-repeat center center/cover;
+    background: url("../img/Vista.jpg") no-repeat center center/cover;
     height: 600px;
     display: flex;
     align-items: center;
@@ -174,7 +175,7 @@ html {
     /* Imagem e pacotes */
    .pacotes {
     position: relative;
-    background: url("../images/paisagem2.png") no-repeat center center/cover;
+    background: url("../img/paisagem2.png") no-repeat center center/cover;
     height: 600px;
     display: flex;
     align-items: center;
@@ -213,7 +214,7 @@ html {
     justify-content: center;
    }
    .people img{
-    height: 60%;
+    height: 10rem;
     width: 80%;
    }
    .people img:hover{
@@ -225,15 +226,27 @@ html {
     align-items: center;
     flex-direction: column;
    }
+   .person-1 img{
+    background-image: url(../img/quarto-basico.jpg);
+    background-size: cover
+   }
    .person-2{
     display: flex;
     align-items: center;
     flex-direction: column;
    }
+   .person-2 img{
+    background-image: url(../img/quarto-casal.jpg);
+    background-size: cover
+   }
    .person-3{
     display: flex;
     align-items: center;
     flex-direction: column;
+   }
+   .person-3 img{
+    background-image: url(../img/suite-presidencial.jpg);
+    background-size: cover
    }
    .stakeholders {
     display: flex;
@@ -299,10 +312,11 @@ html {
     font-size: 25px;
    }
    .role {
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: 0.8rem;
+    text-align: justify;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    font-size: 0.7rem;
    }
+
    .subscribe {
     margin-top : 2rem;
     height: 10vh;
@@ -347,16 +361,6 @@ html {
     box-shadow: 0px -2px 3px #f1f1f1;
     text-align: center;
     padding: 2rem;
-   }
-   .scroll-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 3%;
-    cursor: pointer;
-   }
-   .up-arrow {
-    width: 3rem;
-    height: 3rem;
    }
    .checkbox {
     opacity: 0;
@@ -541,6 +545,7 @@ html {
     /* Para celular */
     }
     @media screen and (max-width: 425px) {
+
         .logo h1{
             display: none;
         }
