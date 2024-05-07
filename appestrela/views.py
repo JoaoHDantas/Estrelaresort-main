@@ -12,12 +12,6 @@ def post_list(request):
     posts = Post.objects.all()
     return render(request, 'posts/post_list.html', {'posts': posts})
 
-
-
-def carousel(request):
-    posts = Post.objects.all()
-    return render(request, 'posts/carousel.html', {'posts': posts})
-
 def post_detail(request, pk):
     post = Post.objects.get(pk=pk)
     return render(request, 'posts/post_detail.html', {'post': post})
@@ -53,7 +47,7 @@ def login(request):
             login_django(request, user)
             return redirect('index')
         else:
-            return HttpResponse('Email ou Senha errada, tente novamente')
+            return render(request,'login_erro.html')
 
 @login_required(login_url="/auth/login/")
 def index(request):
