@@ -12,6 +12,12 @@ def post_list(request):
     posts = Post.objects.all()
     return render(request, 'posts/post_list.html', {'posts': posts})
 
+
+
+def carousel(request):
+    posts = Post.objects.all()
+    return render(request, 'posts/carousel.html', {'posts': posts})
+
 def post_detail(request, pk):
     post = Post.objects.get(pk=pk)
     return render(request, 'posts/post_detail.html', {'post': post})
