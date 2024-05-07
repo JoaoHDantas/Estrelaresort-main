@@ -237,6 +237,9 @@ iframe {
     text-shadow: 2px 2px 2px #333;
     font-size: 1.8rem;
 }
+li{
+    list-style: none;
+}
 
 /* pessoas quartos e suites */
 .carousel-container {

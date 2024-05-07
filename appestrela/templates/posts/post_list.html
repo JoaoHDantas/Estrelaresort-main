@@ -26,7 +26,7 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <a href="#" class="logo">
+        <a href="http://127.0.0.1:8000/posts/index" class="logo">
             <h1>
                 <span class="da">Estrela do mar </span><span class="live">Resort</span>
             </h1>
@@ -41,16 +41,16 @@
 
         <ul>
             <li class="nav-item">
-                <a href="#about" class="nav-link" id="nav-link">Sobre</a>
+                <a href="http://127.0.0.1:8000/posts/index" class="nav-link" id="nav-link">Sobre</a>
             </li>
             <li class="nav-item">
-                <a href="#stars" class="nav-link" id="nav-link">Quartos</a>
+                <a href="http://127.0.0.1:8000/posts/index#quarto_suite" class="nav-link" id="nav-link">Quartos</a>
             </li>
             <li class="nav-item">
-                <a href="#stakeholders " class="nav-link" id="nav-link">Paisagens</a>
+                <a href="http://127.0.0.1:8000/posts/index#hero" class="nav-link" id="nav-link">Cortesias</a>
             </li>
             <li class="nav-item">
-                <a href="#subscribe " class="nav-link" id="nav-link">Check In</a>
+                <a href="http://127.0.0.1:8000/posts/index#pacotes" class="nav-link" id="nav-link">Pacotes</a>
             </li>
         </ul>
         <!-- Dark/light theme switcher -->
@@ -69,7 +69,7 @@
     <div class="quartos">
         {% for post in posts %}
         <div class="item_quarto">
-            <img href="#" src="{{ post.image.url }}"/>
+            <img href="{% url 'post_detail' pk=post.pk %}" src="{{ post.image.url }}"/>
             <li><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></li>
         </div>
         {% endfor %}
@@ -89,7 +89,7 @@
         <h3>Conecte-se conosco</h3>
         <div class="socicons">
             <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
-            <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+            <a href="https://www.instagram.com/joaod_tx/"> <ion-icon name="logo-instagram"></ion-icon> </a>
             <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
         </div>
     </section>
