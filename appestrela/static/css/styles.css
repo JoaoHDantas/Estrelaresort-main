@@ -314,6 +314,18 @@ iframe {
 
     border-radius: 0.6rem;
 }
+/* botao ir para quartos */
+#todos_quartos{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#todos_quartos h2{
+    margin-bottom: 2rem;
+
+}
 
 
 /* Gastronomia */
@@ -347,7 +359,7 @@ iframe {
     text-shadow: 2px 2px 4px #000000;
 }
 
-#bnt-saiba-mais {
+.bntredirect {
     border-style: none;
     padding: 1rem 2rem 1rem 2rem;
     background-color: var(--primary-color);
@@ -355,9 +367,15 @@ iframe {
     color: #fff;
 }
 
-#bnt-saiba-mais:hover {
+.bntredirect:hover {
     transform: scale(1.05);
 
+}
+.bntredirect a{
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    color: #fff;
 }
 
 /* ???????? */
@@ -539,6 +557,10 @@ body.dark .role {
 }
 /* Para Tablet */
 @media screen and (max-width: 768px) {
+    .quarto img{
+        height: 1rem;
+        width: 1rem;
+    }
     body {
         max-width: 768px;
         overflow-x: hidden;
